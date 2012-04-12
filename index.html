@@ -6,15 +6,15 @@
     <base href="safari/">
     <script id="DC_baseScript">if(navigator.userAgent.indexOf('AppleWebKit/') == -1) document.write('<base href="' + location.protocol + '//' + location.host + location.pathname.replace(/\/[^\/]*$/, '/safari/') + '"/>')</script>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="icon" href="Images/Favicon.ico" sizes="32x32 16x16">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="jquery.fancybox.css?v=2.0.5" type="text/css" media="screen">
     <script type="text/javascript" src="../Parts/redirector.js"></script>
     <script type="text/javascript" src="Parts/parts.js" charset="utf-8"></script>
     <script type="text/javascript" src="main.js" charset="utf-8"></script>
     <script type="text/javascript" src="jquery-1.7.1.min.js" charset="utf-8"></script>
     <script type="text/javascript" src="flowslider.jquery.js" charset="utf-8"></script>
-    <link rel="stylesheet" href="jquery.fancybox.css?v=2.0.4" type="text/css" media="screen">
-    <link rel="icon" href="Images/Favicon.ico" sizes="32x32 16x16">
-    <script type="text/javascript" src="jquery.fancybox.pack.js?v=2.0.4"></script>
+    <script type="text/javascript" src="jquery.fancybox.pack.js?v=2.0.5"></script>
     <script type="text/javascript">
         (function($) {
             $(document).ready(function() {
@@ -23,13 +23,14 @@
         })(jQuery);
     </script>
     <script type="text/javascript">
-	$(document).ready(function() {
-			$(".fancybox").fancybox({
-			autoSize: true,
-			prevEffect: "fade",
-			nextEffect: "fade"
+			$(document).ready(function() {
+				$(".fancybox").fancybox({
+					closeClick	: false,
+					openEffect	: 'fade',
+					closeEffect	: 'fade',
+					minHeight : 600
+				});
 			});
-	});
 	</script>
 </head>
 <body onload="load();">
